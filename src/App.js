@@ -11,8 +11,8 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}>
-          <Route path="/" element={"All Component"} />
-          <Route path=":category" element={<Body/>} />
+          <Route path="/" element={<Body/>} />
+          <Route path=":category" element={<Body />} />
         </Route>
         <Route path="/follow" element={<Follow />} />
         <Route path="/contact" element={<Contact />} />

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@200;300;400;500;600;700");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@200;300;400;500;600;700;800;900");
 
 * {
   padding: 0;
@@ -16,11 +16,9 @@ body {
 
 a {
   &:hover {
-    color: blue;
+    color: #0070ff;
   }
-  &:active {
-    color: red;
-  }
+  transition: all 0.1s;
 }
 
 .active {
