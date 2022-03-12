@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@200;300;400;500;600;700");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Rajdhani";
+  text-decoration: none;
+}
+
+body {
+  width: 75vw;
+  margin: auto;
+}
+
+a {
+  &:hover {
+    color: blue;
+  }
+  &:active {
+    color: red;
+  }
+}
+
+.active {
+  color: red;
+  &:hover {
+    color: red;
+  }
+}
+
+hr {
+  outline: none;
+  border-style: solid;
+  color: rgba(0, 0, 0, 0.7);
+}
