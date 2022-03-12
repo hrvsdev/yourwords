@@ -21,11 +21,48 @@ export default function Body() {
             attributed to an unknown typesetter in the 15th century who is
             thought to have scrambled parts of Cicero's De Finibus Bonorum ...
           </p>
-          <Link to="/">
+          <Link to="/" className="read">
             Read Article <HiArrowRight />
           </Link>
         </div>
-        <div className="sub-box-1"></div>
+        <div className="sub-box-1">
+          <div>
+            <img src="https://dummyimage.com/300" />
+            <div className="content">
+              <h4>
+                From its medieval origins to the digital era, learn everything lorem ipsum dolor sit amet
+              </h4>
+              <p className="time">AUG 28, 2022</p>
+              <Link to="/" className="read">
+                Read Article <HiArrowRight />
+              </Link>
+            </div>
+          </div>
+          <div>
+            <img src="https://dummyimage.com/300" />
+            <div className="content">
+              <h4>
+                From its medieval origins to the digital era, learn everything lorem ipsum dolor sit amet
+              </h4>
+              <p className="time">AUG 28, 2022</p>
+              <Link to="/" className="read">
+                Read Article <HiArrowRight />
+              </Link>
+            </div>
+          </div>
+          <div>
+            <img src="https://dummyimage.com/300" />
+            <div className="content">
+              <h4>
+                From its medieval origins to the digital era, learn everything lorem ipsum dolor sit amet
+              </h4>
+              <p className="time">AUG 28, 2022</p>
+              <Link to="/" className="read">
+                Read Article <HiArrowRight />
+              </Link>
+            </div>
+          </div>
+        </div>
         <div className="hdl"></div>
         <div className="hdr">Popular</div>
         <div className="m-sub-box"></div>
