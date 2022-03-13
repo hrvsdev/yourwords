@@ -19,7 +19,7 @@ export default function Body() {
             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
             in laying out print, graphic or web designs. The passage is
             attributed to an unknown typesetter in the 15th century who is
-            thought to have scrambled parts of Cicero's De Finibus Bonorum ...
+            thought to have scrambled parts of Cicero's De Finibus Bonorum
           </p>
           <Link to="/" className="read">
             Read Article <HiArrowRight />
@@ -30,8 +30,9 @@ export default function Body() {
             <img src="https://dummyimage.com/300" />
             <div className="content">
               <h4>
-                From its medieval origins to the digital era, learn everything lorem ipsum dolor sit amet
+                From its medieval origins to the digital era, learn everything
               </h4>
+              <p className="body">A quick brown fox jumps over the lazy dog because she knew that if we tried, it will random people</p>
               <p className="time">AUG 28, 2022</p>
               <Link to="/" className="read">
                 Read Article <HiArrowRight />
@@ -42,8 +43,9 @@ export default function Body() {
             <img src="https://dummyimage.com/300" />
             <div className="content">
               <h4>
-                From its medieval origins to the digital era, learn everything lorem ipsum dolor sit amet
+                From its medieval origins to the digital era, learn everything
               </h4>
+              <p className="body">A quick brown fox jumps over the lazy dog because she knew that if we tried, it will random people</p>
               <p className="time">AUG 28, 2022</p>
               <Link to="/" className="read">
                 Read Article <HiArrowRight />
@@ -54,8 +56,9 @@ export default function Body() {
             <img src="https://dummyimage.com/300" />
             <div className="content">
               <h4>
-                From its medieval origins to the digital era, learn everything lorem ipsum dolor sit amet
+                From its medieval origins to the digital era, learn everything
               </h4>
+              <p className="body">A quick brown fox jumps over the lazy dog because she knew that if we tried, it will random people</p>
               <p className="time">AUG 28, 2022</p>
               <Link to="/" className="read">
                 Read Article <HiArrowRight />
