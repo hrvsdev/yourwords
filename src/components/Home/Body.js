@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 import Top from "./Body/Top";
 import CatOne from "./Body/CatOne";
+import CatTwo from "./Body/CatTwo";
+import CatThree from "./Body/CatThree";
 
 export default function Body() {
   const { category } = useParams();
@@ -11,9 +13,9 @@ export default function Body() {
       <hr className="hr"/>
       <CatOne/>
       <hr className="hr"/>
-      <CatOne/>
+      <CatTwo/>
       <hr className="hr"/>
-      <CatOne/>
+      <CatThree/>
       <hr className="hr"/>
     </main>
   );
