@@ -14,7 +14,7 @@ function Category(props) {
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <div className="top-bar">
         <div className="category">
           <Category to="/" title="All" />
@@ -30,6 +30,6 @@ export default function Home() {
           <FiSearch />
         </div>
       </div>
-    </main>
+    </div>
   );
 }
