@@ -10,6 +10,11 @@ export default function Body() {
       <Top/>
       <hr className="hr"/>
       <CatOne/>
+      <hr className="hr"/>
+      <CatOne/>
+      <hr className="hr"/>
+      <CatOne/>
+      <hr className="hr"/>
     </main>
   );
 }
