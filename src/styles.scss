@@ -212,13 +212,16 @@ nav {
       margin-bottom: 5px;
     }
   }
+}
 
-  .htr,
-  .htl,
-  .hdr,
-  .hdl {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
+.htr,
+.htl,
+.hdr,
+.hdl,
+.cat-one > h3.title,
+.cat-two > h3.title,
+.cat-three > h3.title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
 }

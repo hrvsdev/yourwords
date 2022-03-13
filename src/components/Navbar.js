@@ -25,7 +25,7 @@ export default function Navbar() {
             Contact
           </NavLink>
         </div>
-        <hr />
+        <hr className="vr"/>
         <div className="user-btn">
           <Link to="/" className="login">
             Login

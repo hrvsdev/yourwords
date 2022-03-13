@@ -29,10 +29,17 @@ a {
   }
 }
 
-hr {
+.vr {
   outline: none;
   border-style: solid;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.hr {
+  margin: 1.8rem 0;
+  outline: none;
+  border-style: solid;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .read {
