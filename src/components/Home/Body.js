@@ -83,7 +83,6 @@ export default function Body() {
             <p className="time">AUG 28, 2022</p>
             <h4 className="heading">
               From its medieval origins to the digital era, learn everything
-              there is to know about the ubiquitous lorem ipsum passage
             </h4>
             <p className="body">
               Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -100,7 +99,6 @@ export default function Body() {
             <p className="time">AUG 28, 2022</p>
             <h4 className="heading">
               From its medieval origins to the digital era, learn everything
-              there is to know about the ubiquitous lorem ipsum passage
             </h4>
             <p className="body">
               Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -164,6 +162,7 @@ export default function Body() {
           </div>
         </div>
       </div>
+      <button className="btn">Load More</button>
     </main>
   );
 }
