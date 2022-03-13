@@ -32,7 +32,10 @@ export default function Body() {
               <h4>
                 From its medieval origins to the digital era, learn everything
               </h4>
-              <p className="body">A quick brown fox jumps over the lazy dog because she knew that if we tried, it will random people</p>
+              <p className="body">
+                A quick brown fox jumps over the lazy dog because she knew that
+                if we tried, it will random people
+              </p>
               <p className="time">AUG 28, 2022</p>
               <Link to="/" className="read">
                 Read Article <HiArrowRight />
@@ -45,7 +48,10 @@ export default function Body() {
               <h4>
                 From its medieval origins to the digital era, learn everything
               </h4>
-              <p className="body">A quick brown fox jumps over the lazy dog because she knew that if we tried, it will random people</p>
+              <p className="body">
+                A quick brown fox jumps over the lazy dog because she knew that
+                if we tried, it will random people
+              </p>
               <p className="time">AUG 28, 2022</p>
               <Link to="/" className="read">
                 Read Article <HiArrowRight />
@@ -58,7 +64,10 @@ export default function Body() {
               <h4>
                 From its medieval origins to the digital era, learn everything
               </h4>
-              <p className="body">A quick brown fox jumps over the lazy dog because she knew that if we tried, it will random people</p>
+              <p className="body">
+                A quick brown fox jumps over the lazy dog because she knew that
+                if we tried, it will random people
+              </p>
               <p className="time">AUG 28, 2022</p>
               <Link to="/" className="read">
                 Read Article <HiArrowRight />
@@ -69,7 +78,56 @@ export default function Body() {
         <div className="hdl"></div>
         <div className="hdr">Popular</div>
         <div className="m-sub-box"></div>
-        <div className="sub-box-2"></div>
+        <div className="sub-box-2">
+          <div>
+            <img src="https://dummyimage.com/300" />
+            <div className="content">
+              <h4>
+                From its medieval origins to the digital era, learn everything
+              </h4>
+              <p className="body">
+                A quick brown fox jumps over the lazy dog because she knew that
+                if we tried, it will random people
+              </p>
+              <p className="time">AUG 28, 2022</p>
+              <Link to="/" className="read">
+                Read Article <HiArrowRight />
+              </Link>
+            </div>
+          </div>
+          <div>
+            <img src="https://dummyimage.com/300" />
+            <div className="content">
+              <h4>
+                From its medieval origins to the digital era, learn everything
+              </h4>
+              <p className="body">
+                A quick brown fox jumps over the lazy dog because she knew that
+                if we tried, it will random people
+              </p>
+              <p className="time">AUG 28, 2022</p>
+              <Link to="/" className="read">
+                Read Article <HiArrowRight />
+              </Link>
+            </div>
+          </div>
+          <div>
+            <img src="https://dummyimage.com/300" />
+            <div className="content">
+              <h4>
+                From its medieval origins to the digital era, learn everything
+              </h4>
+              <p className="body">
+                A quick brown fox jumps over the lazy dog because she knew that
+                if we tried, it will random people
+              </p>
+              <p className="time">AUG 28, 2022</p>
+              <Link to="/" className="read">
+                Read Article <HiArrowRight />
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
