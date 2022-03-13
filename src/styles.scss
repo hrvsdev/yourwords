@@ -4,16 +4,10 @@ nav {
   margin-bottom: 1.5rem;
   justify-content: space-between;
   align-items: center;
-  h2 {
-    font-size: 40px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #0070ff;
-    letter-spacing: 1px;
-  }
   .left {
     display: flex;
     flex-direction: row;
+    align-items: center;
     column-gap: 2rem;
     font-weight: 600;
     font-size: 17px;
@@ -22,8 +16,31 @@ nav {
       display: flex;
       column-gap: 1.5rem;
       align-items: center;
+      a{
+        padding: 0 2px;
+      }
+      .signup{
+        border: none;
+        padding: 12px 25px;
+      }
     }
   }
+}
+
+.active {
+  border-bottom: 1px solid #0070ff;
+  color: #0070ff;
+  &:hover {
+    color: #0070ff;
+  }
+}
+
+h2.icon {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0070ff;
+  letter-spacing: 1px;
 }
 
 .top-bar {
@@ -236,5 +253,70 @@ nav {
     height: 220px;
     object-fit: cover;
     margin-bottom: 5px;
+  }
+}
+
+footer {
+  margin: 5rem 0 1rem;
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top {
+    .top-l {
+      margin-bottom: 0.5rem;
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 10px;
+      }
+    }
+    .top-r {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      h4 {
+        font-weight: 600;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 5px;
+      }
+      a {
+        color: #0070ff;
+        width: fit-content;
+        font-weight: 500;
+        margin-bottom: 3px;
+        border-bottom: 1.5px solid transparent;
+        transform: 0.2s;
+        &:hover {
+          border-bottom: 1.5px solid #0070ff;
+        }
+      }
+    }
+  }
+  .bottom {
+    .bottom-l {
+      font-weight: 500;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.9);
+    }
+    .bottom-r {
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        margin-right: 10px;
+        color: rgba(0, 0, 0, 0.9);
+        &:hover{
+          color: #0070ff;
+        }
+      }
+    }
   }
 }

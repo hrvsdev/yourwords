@@ -13,6 +13,7 @@
 body {
   width: 75vw;
   margin: auto;
+  min-height: 101vh;
 }
 
 a {
@@ -22,21 +23,21 @@ a {
   transition: all 0.1s;
 }
 
-.active {
-  color: red;
-  &:hover {
-    color: red;
-  }
-}
 
 .vr {
   outline: none;
   border-style: solid;
+  height: 25px;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .hr {
   margin: 1.8rem 0;
+  outline: none;
+  border-style: solid;
+  color: rgba(0, 0, 0, 0.5);
+}
+.hrb {
   outline: none;
   border-style: solid;
   color: rgba(0, 0, 0, 0.5);
@@ -80,27 +81,27 @@ a {
     55deg,
     rgba(0, 112, 255, 1) 51%,
     rgba(15, 0, 186, 1) 100%
-  );
-}
-
-.btn {
-  padding: 12px 25px;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 20px;
-  border: none;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  &:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
+    );
   }
-
-  &:active {
-    transform: scale(0.95);
+  
+  .btn {
+    padding: 12px 25px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    &:active {
+      transform: scale(0.95);
+    }
   }
-}

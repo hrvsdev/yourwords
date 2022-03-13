@@ -4,6 +4,7 @@ import Top from "./Body/Top";
 import CatOne from "./Body/CatOne";
 import CatTwo from "./Body/CatTwo";
 import CatThree from "./Body/CatThree";
+import Bottom from "./Body/Bottom";
 
 export default function Body() {
   const { category } = useParams();
@@ -16,7 +17,7 @@ export default function Body() {
       <CatTwo/>
       <hr className="hr"/>
       <CatThree/>
-      <hr className="hr"/>
+      <Bottom/>
     </main>
   );
 }
