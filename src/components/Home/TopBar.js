@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 
 function Category(props) {

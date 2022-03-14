@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import Follow from "./components/Follow";
-import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
 import Body from "./components/Home/Body";
+import Category from "./components/Home/Category";
+import Other from "./components/Other";
 
 export default function App() {
   return (
@@ -12,10 +12,12 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />}>
           <Route path="/" element={<Body/>} />
-          <Route path=":category" element={<Body />} />
+          <Route path=":category" element={<Category />} />
         </Route>
-        <Route path="/follow" element={<Follow />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/follow" element={<Other />} />
+        <Route path="/contact" element={<Other />} />
+        <Route path="/privacy-policy" element={<Other />} />
+        <Route path="/terms-of-use" element={<Other />} />
         <Route path="*" element={"Error"} />
       </Routes>
     </>

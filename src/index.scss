@@ -23,7 +23,6 @@ a {
   transition: all 0.1s;
 }
 
-
 .vr {
   outline: none;
   border-style: solid;
@@ -81,27 +80,34 @@ a {
     55deg,
     rgba(0, 112, 255, 1) 51%,
     rgba(15, 0, 186, 1) 100%
-    );
+  );
+}
+
+.btn {
+  padding: 12px 25px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
   }
-  
-  .btn {
-    padding: 12px 25px;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    &:hover {
-      background-position: right center;
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    &:active {
-      transform: scale(0.95);
-    }
+
+  &:active {
+    transform: scale(0.95);
   }
+}
+
+.cat-btn {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
