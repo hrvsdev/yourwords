@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function Category(props) {
   return (
