@@ -17,10 +17,10 @@ nav {
       display: flex;
       column-gap: 1.5rem;
       align-items: center;
-      a{
+      a {
         padding: 0 2px;
       }
-      .signup{
+      .signup {
         border: none;
         padding: 12px 25px;
       }
@@ -49,7 +49,15 @@ h2.icon {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  .cat-icon {
+    display: none;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #0070ff;
+    letter-spacing: 1px;
+  }
   .category {
     display: flex;
     column-gap: 1rem;
@@ -314,7 +322,7 @@ footer {
         font-size: 14px;
         margin-right: 10px;
         color: rgba(0, 0, 0, 0.9);
-        &:hover{
+        &:hover {
           color: #0070ff;
         }
       }
