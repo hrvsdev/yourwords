@@ -1,4 +1,4 @@
-import Category from "./Category";
+import Category from "./TopBar";
 import { Outlet } from "react-router-dom";
 
 export default function Home() {
