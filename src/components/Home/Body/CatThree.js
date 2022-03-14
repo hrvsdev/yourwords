@@ -1,14 +1,14 @@
-import { VrTile } from "./BlogTiles";
+import { HrTile } from "./BlogTiles";
 
 export default function CatTwo() {
   return (
     <div className="cat-body">
       <h3 className="title">World</h3>
       <div className="grid">
-        <VrTile />
-        <VrTile />
-        <VrTile />
-        <VrTile />
+        <HrTile/>
+        <HrTile/>
+        <HrTile/>
+        <HrTile/>
       </div>
     </div>
   );

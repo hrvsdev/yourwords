@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 function HrTile() {
   return (
-    <div>
+    <div className="hr-tile">
       <img src="https://dummyimage.com/300" />
       <p className="time">AUG 28, 2022</p>
       <h4 className="heading">

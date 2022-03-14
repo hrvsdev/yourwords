@@ -3,7 +3,9 @@ import { NavLink, Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav>
-      <h2 className="icon">Your Words</h2>
+      <h2 className="icon">
+        <Link to="/">Your Words</Link>
+      </h2>
       <div className="left">
         <div className="nav-btn">
           <NavLink
@@ -25,7 +27,7 @@ export default function Navbar() {
             Contact
           </NavLink>
         </div>
-        <hr className="vr"/>
+        <hr className="vr" />
         <div className="user-btn">
           <Link to="/" className="login">
             Login

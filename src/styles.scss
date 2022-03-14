@@ -36,7 +36,7 @@ nav {
   }
 }
 
-h2.icon {
+h2.icon, h2.icon > a {
   font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
@@ -153,6 +153,13 @@ h2.icon {
     -webkit-line-clamp: 3;
     line-clamp: 3;
     -webkit-box-orient: vertical;
+  }
+}
+
+
+.hr-tile{
+  .heading{
+    font-size: 18px;
   }
 }
 
