@@ -26,6 +26,12 @@ export default function Navbar() {
           >
             Contact
           </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Blog
+          </NavLink>
         </div>
         <hr className="vr" />
         <div className="user-btn">

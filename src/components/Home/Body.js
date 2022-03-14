@@ -1,13 +1,12 @@
-import { useParams, Link } from "react-router-dom";
-import { HiArrowRight } from "react-icons/hi";
+import { useParams} from "react-router-dom";
 import Top from "./Body/Top";
 import CatOne from "./Body/CatOne";
 import CatTwo from "./Body/CatTwo";
 import CatThree from "./Body/CatThree";
 import Bottom from "./Body/Bottom";
+import TopBar from "./TopBar"
 
 export default function Body() {
-  const { category } = useParams();
   return (
     <main className="main-body">
       <Top/>

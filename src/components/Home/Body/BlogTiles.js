@@ -4,7 +4,7 @@ import { HiArrowRight } from "react-icons/hi";
 function HrTile() {
   return (
     <div className="hr-tile">
-      <img src="https://dummyimage.com/300" />
+      <img src="https://picsum.photos/300" />
       <p className="time">AUG 28, 2022</p>
       <h4 className="heading">
         From its medieval origins to the digital era, learn everything
@@ -23,7 +23,7 @@ function HrTile() {
 function VrTile() {
   return (
     <div>
-      <img src="https://dummyimage.com/300" />
+      <img src="https://picsum.photos/200" />
       <div className="content">
         <h4>From its medieval origins to the digital era, learn everything</h4>
         <p className="body">
@@ -41,7 +41,7 @@ function VrTile() {
 function BgTile() {
   return (
     <div className="main-box">
-      <img src="https://dummyimage.com/300" />
+      <img src="https://picsum.photos/500" />
       <p className="time">AUG 28, 2022</p>
       <h4 className="heading">
         From its medieval origins to the digital era, learn everything there is
