@@ -44,7 +44,7 @@ a {
 }
 
 .read {
-  display: flex;
+  display: inline-flex;
   column-gap: 8px;
   align-items: center;
   transition: all 0.2s;
@@ -74,6 +74,20 @@ a {
 .read:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.back {
+  column-gap: 8px;
+  font-size: 16px;
+  color: #ff4040;
+  cursor: pointer;
+  svg {
+    fill: #ff4040;
+  }
+}
+.back:after {
+  width: 100%;
+  background-color: #ff4040;
 }
 
 .btn {
@@ -111,4 +125,3 @@ a {
   display: flex;
   justify-content: center;
 }
-

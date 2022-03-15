@@ -7,7 +7,7 @@ export default function Blog() {
   return (
     <>
       <p
-        className="read back"
+        className="back read"
         onClick={() => {
           navigate(-1);
         }}
