@@ -13,7 +13,7 @@ function HrTile() {
         Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
         laying out print.
       </p>
-      <Link to="/" className="read">
+      <Link to="/blog" className="read">
         Read Article <HiArrowRight />
       </Link>
     </div>
@@ -30,7 +30,7 @@ function VrTile() {
           A quick brown fox jumps over the lazy brown and black dog.
         </p>
         <p className="time">AUG 28, 2022</p>
-        <Link to="/" className="read">
+        <Link to="/blog" className="read">
           Read Article <HiArrowRight />
         </Link>
       </div>
@@ -51,7 +51,7 @@ function BgTile() {
         Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
         laying out print, graphic or web designs.
       </p>
-      <Link to="/" className="read">
+      <Link to="/blog" className="read">
         Read Article <HiArrowRight />
       </Link>
     </div>
