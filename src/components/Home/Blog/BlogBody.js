@@ -9,7 +9,7 @@ export default function BlogBody() {
       <h1 className="heading">{heading}</h1>
       <div className="other-content">
         <div className="main-content">
-          <img src="https://picsum.photos/800" />
+          <img src="https://picsum.photos/800"/>
           <div className="det-bar">
             <span className="time">Aug 28, 2022</span>
             <hr className="vr" />
