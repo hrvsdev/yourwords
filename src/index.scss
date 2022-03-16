@@ -34,14 +34,15 @@ a {
 .hr {
   margin: 1.8rem 0;
   border: 0;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid black;
+  opacity: 0.3;
 }
 
 .hrb {
   border: 0;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.5);
+  outline: none;
+  border-top: 2px solid black;
+  opacity: 0.3;
 }
 
 .read {

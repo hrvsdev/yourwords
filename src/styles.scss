@@ -386,14 +386,20 @@ footer {
           color: rgba(0, 0, 0, 0.8);
         }
       }
-      .share-blog{
+      .share-blog {
         height: 30px;
         margin: 2rem 0 0.2rem;
         display: flex;
-        column-gap: 6px;
-        img{
-          all: unset;
-          width: 30px;
+        column-gap: 7px;
+        a {
+          img {
+            all: unset;
+            border-radius: 50%;
+            width: 30px;
+            filter: invert(52%) sepia(82%) saturate(5104%) hue-rotate(336deg)
+            brightness(100%) contrast(106%);
+            transition: 0.2s;
+          }
         }
       }
     }
