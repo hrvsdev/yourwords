@@ -25,22 +25,23 @@ a {
 }
 
 .vr {
-  outline: none;
-  border-style: solid;
+  border: 0;
   height: 25px;
-  color: rgba(0, 0, 0, 0.7);
+  width: 1.5px;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .hr {
   margin: 1.8rem 0;
-  outline: none;
-  border-style: solid;
-  color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.5);
 }
+
 .hrb {
-  outline: none;
-  border-style: solid;
-  color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .read {

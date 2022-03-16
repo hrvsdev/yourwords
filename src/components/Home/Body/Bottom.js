@@ -17,7 +17,7 @@ export default function Bottom() {
           <a href="tel:+919876543210">+91 9876543210</a>
         </div>
       </div>
-      <hr className="hrb" />
+      <p className="hrb" />
       <div className="bottom">
         <div className="bottom-l">&copy; Your Words 2022</div>
         <div className="bottom-r">

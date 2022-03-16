@@ -1,6 +1,7 @@
 import BlogBody from "./BlogBody";
 import {HiArrowLeft} from "react-icons/hi"
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function Blog() {
   const navigate = useNavigate();
@@ -15,6 +16,8 @@ export default function Blog() {
         <HiArrowLeft /> Back
       </p>
       <BlogBody />
+      <hr className="hr" />
+      <Footer/>
     </>
   );
 }

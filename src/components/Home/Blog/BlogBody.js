@@ -1,13 +1,12 @@
 import Featured from "./Featured";
+import ShareBlog from "./ShareBlog";
 
 export default function BlogBody() {
+  const heading =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s";
   return (
     <div className="blog-body">
-      <h1 className="heading">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s
-      </h1>
+      <h1 className="heading">{heading}</h1>
       <div className="other-content">
         <div className="main-content">
           <img src="https://picsum.photos/800" />
@@ -65,6 +64,7 @@ export default function BlogBody() {
               pleasure?"
             </p>
           </div>
+          <ShareBlog heading={heading} />
         </div>
         <Featured />
       </div>

@@ -386,6 +386,16 @@ footer {
           color: rgba(0, 0, 0, 0.8);
         }
       }
+      .share-blog{
+        height: 30px;
+        margin: 2rem 0 0.2rem;
+        display: flex;
+        column-gap: 6px;
+        img{
+          all: unset;
+          width: 30px;
+        }
+      }
     }
 
     .ftr-box {
