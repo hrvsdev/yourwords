@@ -15,22 +15,22 @@ export default function Navbar() {
             Home
           </NavLink>
           <NavLink
-            to="/follow"
+            to="/category"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Follow
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Contact
+            Category
           </NavLink>
           <NavLink
             to="/blog"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Blog
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Contact
           </NavLink>
         </div>
         <hr className="vr" />

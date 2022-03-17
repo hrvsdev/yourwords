@@ -1,6 +1,7 @@
-import {  useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Bottom from "./Body/Bottom";
 import { BgTile, HrTile, VrTile } from "./Body/BlogTiles";
+import { useEffect } from "react";
 
 export default function Category() {
   const { category } = useParams();
