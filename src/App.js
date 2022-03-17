@@ -6,17 +6,19 @@ import Category from "./components/Home/Category";
 import Other from "./components/Other";
 import Blog from "./components/Home/Blog/Blog";
 import { AnimatePresence } from "framer-motion";
+import Search from "./components/Home/Search/Search";
 
 export default function App() {
-  const location = useLocation()
+  const location = useLocation();
   return (
     <>
       <Navbar />
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Home />}>
             <Route path="/" element={<Body />} />
-            <Route path=":category" element={<Category />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="category/:category" element={<Category />} />
           </Route>
           <Route path="/blog" element={<Blog />} />
           <Route path="/follow" element={<Other />} />

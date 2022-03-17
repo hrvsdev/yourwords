@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 
 function Category(props) {
@@ -17,12 +17,12 @@ export default function Home() {
     <div className="top-bar">
       <div className="category">
         <Category to="/" title="All" />
-        <Category to="featured" title="Featured" />
-        <Category to="popular" title="Popular" />
-        <Category to="world" title="World" />
-        <Category to="business" title="Business" />
-        <Category to="technology" title="Technology" />
-        <Category to="safety" title="Safety" />
+        <Category to="category/featured" title="Featured" />
+        <Category to="category/popular" title="Popular" />
+        <Category to="category/world" title="World" />
+        <Category to="category/business" title="Business" />
+        <Category to="category/technology" title="Technology" />
+        <Category to="category/safety" title="Safety" />
       </div>
       <div className="search">
         <input type="text" placeholder="Search" />

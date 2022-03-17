@@ -12,11 +12,11 @@ export default function Blog() {
   }, []);
 
   const blogVariant = {
-    initial: { y: 7, opacity: 0 },
+    initial: { y: 10, opacity: 0 },
     animate: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.25, delay: 0.1, type: "tween" },
+      transition: { duration: 0.18, type: "tween" },
     },
   };
 
