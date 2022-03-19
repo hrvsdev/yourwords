@@ -1,36 +1,31 @@
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 
-function HrTile() {
+function HrTile({ title, content, image, _id }) {
   return (
     <div className="hr-tile">
-      <img src="https://picsum.photos/300" />
+      <img src={image} />
       <p className="time">AUG 28, 2022</p>
       <h4 className="heading">
-        From its medieval origins to the digital era, learn everything
+        {title.charAt(0).toUpperCase() + title.slice(1)}
       </h4>
-      <p className="body">
-        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-        laying out print.
-      </p>
-      <Link to="/blog" className="read">
+      <p className="body">{content}</p>
+      <Link to={`/blog/${_id}`} className="read">
         Read Article <HiArrowRight />
       </Link>
     </div>
   );
 }
 
-function VrTile() {
+function VrTile({ title, content, image, _id }) {
   return (
     <div>
-      <img src="https://picsum.photos/200" />
+      <img src={image} />
       <div className="content">
-        <h4>From its medieval origins to the digital era, learn everything</h4>
-        <p className="body">
-          A quick brown fox jumps over the lazy brown and black dog.
-        </p>
+        <h4>{title.charAt(0).toUpperCase() + title.slice(1)}</h4>
+        <p className="body">{content}</p>
         <p className="time">AUG 28, 2022</p>
-        <Link to="/blog" className="read">
+        <Link to={`/blog/${_id}`} className="read">
           Read Article <HiArrowRight />
         </Link>
       </div>
@@ -38,24 +33,30 @@ function VrTile() {
   );
 }
 
-function BgTile() {
+function BgTile({ title, content, image, _id }) {
   return (
     <div className="main-box">
-      <img src="https://picsum.photos/500" />
+      <img src={image} />
       <p className="time">AUG 28, 2022</p>
       <h4 className="heading">
-        From its medieval origins to the digital era, learn everything there is
-        to know about the ubiquitous lorem ipsum passage
+        {title.charAt(0).toUpperCase() + title.slice(1)}
       </h4>
-      <p className="body">
-        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-        laying out print, graphic or web designs.
-      </p>
-      <Link to="/blog" className="read">
+      <p className="body">{content}</p>
+      <Link to={`/blog/${_id}`} className="read">
         Read Article <HiArrowRight />
       </Link>
     </div>
   );
+}
+
+HrTile.defaultProps = {
+  title: ""
+}
+VrTile.defaultProps = {
+  title: ""
+}
+BgTile.defaultProps = {
+  title: ""
 }
 
 export { HrTile, VrTile, BgTile };

@@ -21,7 +21,7 @@ export default function App() {
             <Route path="category/:category" element={<Category />} />
           </Route>
           <Route path="/category" element={<Navigate to="featured" />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<Blog />} />
           <Route path="/follow" element={<Other />} />
           <Route path="/contact" element={<Other />} />
           <Route path="/privacy-policy" element={<Other />} />

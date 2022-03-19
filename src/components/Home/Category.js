@@ -1,35 +1,36 @@
-import { useNavigate, useParams } from "react-router-dom";
-import Bottom from "./Body/Bottom";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 import { BgTile, HrTile, VrTile } from "./Body/BlogTiles";
-import { useEffect } from "react";
+import Bottom from "./Body/Bottom";
 
 export default function Category() {
   const { category } = useParams();
+  const [featured, setFeatured] = useState([{ category: "" }]);
+  useEffect(async () => {
+    const res = await fetch(
+      `http://localhost:5000/blogs?limit=21&category=${category}`
+    );
+    const data = await res.json();
+    setFeatured(data.blogs);
+  }, []);
+
   return (
     <div className="category-body">
       <div className="body-top">
-        <div className="htl">{category.toUpperCase()}</div>
-        <BgTile />
+        <div className="htl">{featured[0].category.toUpperCase()}</div>
+        <BgTile {...featured[0]} />
         <div className="sub-box-1">
-          <VrTile />
-          <VrTile />
-          <VrTile />
+          {featured.slice(1, 4).map((e) => (
+            <VrTile {...e} />
+          ))}
         </div>
         <div className="hdl"></div>
       </div>
       <div className="grid">
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
-        <HrTile />
+        {featured.slice(4, 20).map((e) => (
+          <HrTile {...e} />
+        ))}
       </div>
       <div className="cat-btn">
         <button className="btn">Load More</button>
