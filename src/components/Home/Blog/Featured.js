@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
+import { useContext } from "react";
+import { Context } from "../../../context/Context";
 import { Link } from "react-router-dom";
 
 function FtrTile({ title, _id }) {
@@ -17,19 +18,12 @@ function FtrTile({ title, _id }) {
 }
 
 export default function Featured() {
-  const [blogs, setBlogs] = useState([]);
-  useEffect(async () => {
-    const res = await fetch(
-      `http://localhost:5000/blogs?limit=5&category=featured`
-    );
-    const data = await res.json();
-    setBlogs(data.blogs);
-  }, []);
+  const { blogFtr } = useContext(Context);
   return (
     <div className="ftr-box">
       <div className="featured">
         <h4 className="ftr-heading">Featured</h4>
-        {blogs.map((e) => (
+        {blogFtr.map((e) => (
           <FtrTile {...e} key={e._id}/>
         ))}
       </div>

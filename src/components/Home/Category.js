@@ -7,15 +7,17 @@ import Bottom from "./Body/Bottom";
 export default function Category() {
   const { category } = useParams();
   const [featured, setFeatured] = useState([{ category: "" }]);
+  const [loading, setLoading] = useState(true);
   useEffect(async () => {
     const res = await fetch(
       `http://localhost:5000/blogs?limit=21&category=${category}`
     );
     const data = await res.json();
     setFeatured(data.blogs);
+    setLoading(false)
   }, []);
 
-  return (
+  return !loading ? (
     <div className="category-body">
       <div className="body-top">
         <div className="htl">{featured[0].category.toUpperCase()}</div>
@@ -37,5 +39,7 @@ export default function Category() {
       </div>
       <Bottom />
     </div>
+  ) : (
+    "Loading"
   );
 }

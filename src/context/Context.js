@@ -2,8 +2,6 @@ import { createContext, useRef, useState } from "react";
 export const Context = createContext();
 
 export default function ContextProvider(props) {
-  const [show, setShow] = useState(false);
-
   const [recent, setRecent] = useState([]);
   const [featured, setFeatured] = useState([]);
   const [popular, setPopular] = useState([]);
@@ -11,6 +9,9 @@ export default function ContextProvider(props) {
   const [technology, setTechnology] = useState([]);
   const [business, setBusiness] = useState([]);
 
+  const [blog, setBlog] = useState({ title: "", content: "" });
+  const [blogFtr, setBlogFtr] = useState([]);
+  
   const [searchVal, setSearchVal] = useState("");
 
   return (
@@ -30,8 +31,10 @@ export default function ContextProvider(props) {
         setTechnology,
         business,
         setBusiness,
-        show,
-        setShow,
+        blog,
+        setBlog,
+        blogFtr,
+        setBlogFtr
       }}
     >
       {props.children}
