@@ -19,17 +19,17 @@ export default function Category() {
     <div className="category-body">
       <div className="body-top">
         <div className="htl">{featured[0].category.toUpperCase()}</div>
-        <BgTile {...featured[0]} />
+        <BgTile {...featured[0]} key={featured[0]._id} />
         <div className="sub-box-1">
           {featured.slice(1, 4).map((e) => (
-            <VrTile {...e} />
+            <VrTile {...e} key={e._id} />
           ))}
         </div>
         <div className="hdl"></div>
       </div>
       <div className="grid">
         {featured.slice(4, 20).map((e) => (
-          <HrTile {...e} />
+          <HrTile {...e} key={e._id} />
         ))}
       </div>
       <div className="cat-btn">

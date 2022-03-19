@@ -30,7 +30,7 @@ export default function Featured() {
       <div className="featured">
         <h4 className="ftr-heading">Featured</h4>
         {blogs.map((e) => (
-          <FtrTile {...e} />
+          <FtrTile {...e} key={e._id}/>
         ))}
       </div>
     </div>

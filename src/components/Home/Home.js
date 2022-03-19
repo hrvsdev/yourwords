@@ -13,10 +13,8 @@ export default function Home() {
   };
   return (
     <>
-      <TopBar/>
-      <motion.div variants={homeVariant} initial="initial" animate="animate">
-        <Outlet />
-      </motion.div>
+      <TopBar />
+      <Outlet />
     </>
   );
 }

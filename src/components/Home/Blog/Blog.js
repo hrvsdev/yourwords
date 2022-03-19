@@ -21,7 +21,7 @@ export default function Blog() {
   };
 
   return (
-    <motion.div variants={blogVariant} initial="initial" animate="animate">
+    <div variants={blogVariant} initial="initial" animate="animate">
       <p
         className="back read"
         onClick={() => {
@@ -33,6 +33,6 @@ export default function Blog() {
       <BlogBody />
       <hr className="hr" />
       <Footer />
-    </motion.div>
+    </div>
   );
 }
