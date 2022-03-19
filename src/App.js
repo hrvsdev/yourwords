@@ -1,13 +1,12 @@
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import { Routes, Route, useLocation } from "react-router-dom";
 import Body from "./components/Home/Body";
 import Category from "./components/Home/Category";
 import Other from "./components/Other";
 import Blog from "./components/Home/Blog/Blog";
-import { AnimatePresence } from "framer-motion";
 import Search from "./components/Home/Search/Search";
-import CategoryBody from "./components/CategoryBody";
 
 export default function App() {
   const location = useLocation();
@@ -21,7 +20,7 @@ export default function App() {
             <Route path="/search" element={<Search />} />
             <Route path="category/:category" element={<Category />} />
           </Route>
-          <Route path="/category" element={<CategoryBody />} />
+          <Route path="/category" element={<Navigate to="featured" />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/follow" element={<Other />} />
           <Route path="/contact" element={<Other />} />
