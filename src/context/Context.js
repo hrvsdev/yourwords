@@ -1,7 +1,10 @@
-import { createContext, useRef, useState } from "react";
+import { createContext, useState } from "react";
 export const Context = createContext();
 
 export default function ContextProvider(props) {
+  const [loading, setLoading] = useState(true)
+  const [progress, setProgress] = useState(0)
+
   const [recent, setRecent] = useState([]);
   const [featured, setFeatured] = useState([]);
   const [popular, setPopular] = useState([]);
@@ -34,7 +37,11 @@ export default function ContextProvider(props) {
         blog,
         setBlog,
         blogFtr,
-        setBlogFtr
+        setBlogFtr,
+        loading,
+        setLoading,
+        progress,
+        setProgress,
       }}
     >
       {props.children}

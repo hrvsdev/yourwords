@@ -3,7 +3,9 @@ import CatOne from "./Body/CatOne";
 import CatTwo from "./Body/CatTwo";
 import CatThree from "./Body/CatThree";
 import Bottom from "./Body/Bottom";
+
 import { useContext, useEffect, useState } from "react";
+import LoadingBar from "react-top-loading-bar";
 import { Context } from "../../context/Context";
 
 export default function Body() {
@@ -20,10 +22,15 @@ export default function Body() {
     setTechnology,
     business,
     setBusiness,
+    loading,
+    setLoading,
+    progress,
+    setProgress
   } = useContext(Context);
 
   useEffect(async () => {
-    const res1 = await fetch(`http://localhost:5000/blogs?limit=3`);
+    setProgress(30)
+    const res1 = await fetch(`http://localhost:5000/blogs?limit=3&page=1`);
     const data1 = await res1.json();
     setRecent(data1.blogs);
 
@@ -56,24 +63,24 @@ export default function Body() {
     );
     const data6 = await res6.json();
     setWorld(data6.blogs);
+    setLoading(false);
+    setProgress(100)
   }, []);
   return (
-    recent.length &&
-    featured.length &&
-    popular.length &&
-    technology.length &&
-    business.length &&
-    world.length ? (
-      <main className="main-body">
-        <Top />
-        <hr className="hr" />
-        <CatOne />
-        <hr className="hr" />
-        <CatTwo />
-        <hr className="hr" />
-        <CatThree />
-        <Bottom />
-      </main>
-    ) : "Loading"
+    <main className="main-body">
+      <LoadingBar
+        color="#0070ff"
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
+      <Top />
+      <hr className="hr" />
+      <CatOne />
+      <hr className="hr" />
+      <CatTwo />
+      <hr className="hr" />
+      <CatThree />
+      <Bottom />
+    </main>
   );
 }

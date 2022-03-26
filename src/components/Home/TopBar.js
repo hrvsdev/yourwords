@@ -1,4 +1,4 @@
-import { useNavigate, NavLink } from "react-router-dom";
+import { useNavigate, NavLink, Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { useContext } from "react";
 import { Context } from "../../context/Context";
@@ -15,7 +15,7 @@ function Category(props) {
 }
 
 export default function Home() {
-  const { searchVal, setSearchVal} = useContext(Context);
+  const { searchVal, setSearchVal } = useContext(Context);
   const navigate = useNavigate();
   const search = (e) => {
     e.preventDefault();
@@ -41,7 +41,11 @@ export default function Home() {
           }}
           placeholder="Search"
         />
-        <FiSearch />
+        <FiSearch
+          onClick={() => {
+            navigate("/search");
+          }}
+        />
       </form>
     </div>
   );

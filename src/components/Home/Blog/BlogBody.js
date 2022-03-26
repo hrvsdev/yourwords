@@ -19,7 +19,9 @@ export default function BlogBody({}) {
             <span className="author">Harsh Vyas</span>
           </div>
           <div className="content">{blog.content}</div>
-          <ShareBlog heading={blog.title} />
+          <ShareBlog
+            heading={blog.title.charAt(0).toUpperCase() + blog.title.slice(1)}
+          />
         </div>
         <Featured />
       </div>

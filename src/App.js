@@ -1,5 +1,4 @@
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import Body from "./components/Home/Body";
@@ -13,7 +12,6 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <AnimatePresence exitBeforeEnter initial={false}>
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Home />}>
             <Route path="/" element={<Body />} />
@@ -28,7 +26,6 @@ export default function App() {
           <Route path="/terms-of-use" element={<Other />} />
           <Route path="*" element={"Error"} />
         </Routes>
-      </AnimatePresence>
     </>
   );
 }

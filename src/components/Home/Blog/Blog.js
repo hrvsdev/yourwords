@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import Footer from "./Footer";
 import { useContext, useState } from "react";
 import { Context } from "../../../context/Context";
-import { motion } from "framer-motion";
 
 import { useEffect } from "react";
 

@@ -20,7 +20,9 @@ function HrTile({ title, content, image, _id }) {
 function VrTile({ title, content, image, _id }) {
   return (
     <div>
-      <img src={image} />
+      <div className="image-box">
+        <img src={image}/>
+      </div>
       <div className="content">
         <h4>{title.charAt(0).toUpperCase() + title.slice(1)}</h4>
         <p className="body">{content}</p>
@@ -50,13 +52,13 @@ function BgTile({ title, content, image, _id }) {
 }
 
 HrTile.defaultProps = {
-  title: ""
-}
+  title: "",
+};
 VrTile.defaultProps = {
-  title: ""
-}
+  title: "",
+};
 BgTile.defaultProps = {
-  title: ""
-}
+  title: "",
+};
 
 export { HrTile, VrTile, BgTile };
