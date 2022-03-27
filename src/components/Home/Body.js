@@ -30,36 +30,36 @@ export default function Body() {
 
   useEffect(async () => {
     setProgress(30)
-    const res1 = await fetch(`http://localhost:5000/blogs?limit=3&page=1`);
+    const res1 = await fetch(`https://hrv-yourwords.herokuapp.com/blogs?limit=3&page=1`);
     const data1 = await res1.json();
     setRecent(data1.blogs);
 
     const res2 = await fetch(
-      `http://localhost:5000/blogs?limit=3&category=featured`
+      `https://hrv-yourwords.herokuapp.com/blogs?limit=3&category=featured`
     );
     const data2 = await res2.json();
     setFeatured(data2.blogs);
 
     const res3 = await fetch(
-      `http://localhost:5000/blogs?limit=3&category=popular`
+      `https://hrv-yourwords.herokuapp.com/blogs?limit=3&category=popular`
     );
     const data3 = await res3.json();
     setPopular(data3.blogs);
 
     const res4 = await fetch(
-      `http://localhost:5000/blogs?limit=8&category=technology`
+      `https://hrv-yourwords.herokuapp.com/blogs?limit=8&category=technology`
     );
     const data4 = await res4.json();
     setTechnology(data4.blogs);
 
     const res5 = await fetch(
-      `http://localhost:5000/blogs?limit=4&category=business`
+      `https://hrv-yourwords.herokuapp.com/blogs?limit=4&category=business`
     );
     const data5 = await res5.json();
     setBusiness(data5.blogs);
 
     const res6 = await fetch(
-      `http://localhost:5000/blogs?limit=4&category=world`
+      `https://hrv-yourwords.herokuapp.com/blogs?limit=4&category=world`
     );
     const data6 = await res6.json();
     setWorld(data6.blogs);
