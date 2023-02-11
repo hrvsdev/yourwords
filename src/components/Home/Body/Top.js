@@ -10,13 +10,13 @@ export default function Top() {
   const [page, setPage] = useState(2);
   const fetchMoreData = async () => {
     const res1 = await fetch(
-      `https://hrv-yourwords.herokuapp.com/blogs?limit=3&page=${page}`
+      `http://localhost:5000/blogs?limit=3&page=${page}`
     );
     const data1 = await res1.json();
     setRecent(recent.concat(data1.blogs));
 
     const res2 = await fetch(
-      `https://hrv-yourwords.herokuapp.com/blogs?limit=3&page=${page}&category=popular`
+      `http://localhost:5000/blogs?limit=3&page=${page}&category=popular`
     );
     const data2 = await res2.json();
     setPopular(popular.concat(data2.blogs));

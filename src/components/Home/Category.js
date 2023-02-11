@@ -13,7 +13,7 @@ export default function Category() {
   const [loading, setLoading] = useState(true);
   useEffect(async () => {
     const res = await fetch(
-      `https://hrv-yourwords.herokuapp.com/blogs?limit=20&page=${page}&category=${category}`
+      `http://localhost:5000/blogs?limit=20&page=${page}&category=${category}`
     );
     const data = await res.json();
     setFeatured(data.blogs);
@@ -23,7 +23,7 @@ export default function Category() {
 
   const fetchMoreData = async () => {
     const res = await fetch(
-      `https://hrv-yourwords.herokuapp.com/blogs?limit=20&page=${page}&category=${category}`
+      `http://localhost:5000/blogs?limit=20&page=${page}&category=${category}`
     );
     const data = await res.json();
     setFeatured(featured.concat(data.blogs));

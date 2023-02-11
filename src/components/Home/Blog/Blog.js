@@ -13,12 +13,12 @@ export default function Blog() {
 
   const { id } = useParams();
   useEffect(async () => {
-    const res1 = await fetch(`https://hrv-yourwords.herokuapp.com/blog/${id}`);
+    const res1 = await fetch(`http://localhost:5000/blog/${id}`);
     const data1 = await res1.json();
     setBlog(data1.blog);
 
     const res2 = await fetch(
-      `https://hrv-yourwords.herokuapp.com/blogs?limit=5&category=featured`
+      `http://localhost:5000/blogs?limit=5&category=featured`
     );
     const data2 = await res2.json();
     setBlogFtr(data2.blogs);
